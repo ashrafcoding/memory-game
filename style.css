@@ -50,6 +50,9 @@ body {
     flex-wrap: wrap;
     margin: 20px auto;
 }
+.memory-game-blocks.no-clicking {
+    pointer-events: none;
+}
 .memory-game-blocks .game-block {
     height: 200px;
     transition: transform .5s;
@@ -85,6 +88,7 @@ body {
     backface-visibility: hidden;
     border: 5px solid #2196f3;
 }
-.is-flipped {
+.is-flipped,.has-match {
     transform: rotateY(180deg);
+    pointer-events: none;
 }
